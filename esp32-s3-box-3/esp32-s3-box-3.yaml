@@ -35,7 +35,8 @@ substitutions:
   # for Greek use "Noto Sans" for other languages use a compatible font family
   font_family: Figtree
 
-  micro_wake_word_model: okay_nabu
+  #micro_wake_word_model: okay_nabu
+  micro_wake_word_model: github://mwmdeadpool/micro-wake-word-models/models/v2/hey_lazlo.json@main
 
 esphome:
   name: ${name}
@@ -204,6 +205,7 @@ media_player:
 micro_wake_word:
   models:
     - ${micro_wake_word_model}
+    - hey_jarvis
   on_wake_word_detected:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
