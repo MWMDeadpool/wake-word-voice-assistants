@@ -344,3 +344,4 @@ micro_wake_word:
   vad:
   models:
     - model: ${micro_wake_word_model}
+    - model: github://mwmdeadpool/micro-wake-word-models/models/v2/hey_lazlo.json@main.
