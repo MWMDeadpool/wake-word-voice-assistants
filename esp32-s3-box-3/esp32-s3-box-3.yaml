@@ -223,7 +223,6 @@ micro_wake_word:
     - okay_nabu
     - hey_mycroft
     - hey_jarvis
-    - github://mwmdeadpool/micro-wake-word-models/models/v2/laszlo.json
   on_wake_word_detected:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
