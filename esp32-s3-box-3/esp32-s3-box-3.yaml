@@ -219,12 +219,7 @@ media_player:
 
 micro_wake_word:
   id: mww
-  models:
-    - okay_nabu
-    - hey_mycroft
-    - hey_jarvis
-    - model: github://mwmdeadpool/micro-wake-word-models/models/v2/laszlo.json
-      id: laszlo
+  model: github://mwmdeadpool/micro-wake-word-models/models/v2/laszlo.json
   on_wake_word_detected:
     - voice_assistant.start:
         wake_word: !lambda return wake_word;
