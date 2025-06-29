@@ -221,10 +221,9 @@ micro_wake_word:
   id: mww
   models:
     - okay_nabu
-    - hey_mycroft
+    #- hey_mycroft
     - hey_jarvis
-    - url: https://github.com/mwmdeadpool/micro-wake-word-models/raw/main/models/v2/laszlo.json
-      type: http
+    - model: github://esphome/micro-wake-word-models/models/v2/laszlo.json
 
   on_wake_word_detected:
     - voice_assistant.start:

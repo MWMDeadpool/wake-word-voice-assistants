@@ -366,6 +366,6 @@ micro_wake_word:
   vad:
   models:
     - model: okay_nabu
-    - model: hey_mycroft
+    #- model: hey_mycroft
     - model: hey_jarvis
     - model: github://esphome/micro-wake-word-models/models/v2/laszlo.json
