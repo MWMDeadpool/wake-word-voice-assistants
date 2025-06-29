@@ -219,10 +219,11 @@ media_player:
 
 micro_wake_word:
   id: mww
+  vad:
   models:
-    - okay_nabu
-    #- hey_mycroft
-    - hey_jarvis
+    - model: okay_nabu
+    #- model: hey_mycroft
+    - model: hey_jarvis
     - model: github://esphome/micro-wake-word-models/models/v2/laszlo.json
 
   on_wake_word_detected:
